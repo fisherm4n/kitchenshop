@@ -20,6 +20,7 @@
     "jquery": "^3.5.1"
   },
   "dependencies": {
-    "mozjpeg": "^7.0.0"
+    "mozjpeg": "^7.0.0",
+    "swiper": "^6.4.14"
   }
 }

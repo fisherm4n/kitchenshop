@@ -21,6 +21,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
   }
 
   &__categories-list {
@@ -171,6 +172,7 @@
     span {
       width: 98px;
       margin-left: 10px;
+      @extend %MyriadPro-300;
     }
   }
 
@@ -185,6 +187,7 @@
     }
 
     &-text {
+      @extend %MyriadPro-300;
       color: #777777;
     }
 
@@ -201,7 +204,259 @@
   }
 }
 
+.main {
+  background-color: #f4f2f2;
+}
 
+.offers {
+  padding: 18px 0;
 
+  .wrapper {
+    display: flex;
+  }
+
+  &__slider {
+    width: 58%;
+    margin: 0 20px;
+  }
+
+  &__slider-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #232323;
+
+    span {
+      display: inline-block;
+      margin-bottom: 73px;
+    }
+  }
+
+  &__slider-text {
+    margin-left: 65px;
+  }
+
+  &__slider-title {
+    margin-bottom: 15px;
+    font-size: 40px;
+  }
+
+  &__slider-subtitle {
+    margin-bottom: 63px;
+    @extend %MyriadPro-300;
+
+  }
+
+  &__slider-more,
+  &__slider-item {
+
+    color: #fff5eb;
+  }
+
+  &__slider-img {
+    width: 260px;
+    height: 357px;
+    margin-right: 78px;
+  }
+
+  &__slider-more {
+    @extend %MyriadPro-300;
+    padding: 8px 30px;
+    border: 2px solid #282828;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background: #faad3d;
+    border: transparent solid 1px;
+    color: #fff;
+    margin: 20px 0;
+  }
+}
+
+.offers-filter {
+  width: 19.5%;
+  background-color: rgb(255, 255, 255);
+
+  &__title {
+    font-size: 22px;
+    color: #faad3d;
+    padding: 34px 0 20px 25px;
+    margin: 0;
+  }
+
+  li {
+    padding: 16px 0 12px 27px;
+    border-bottom: 1px solid #ededed;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    a {
+      color: #303030;
+      font-size: 14px;
+      position: relative;
+      display: flex;
+
+      &::after {
+        content: '>';
+        position: absolute;
+        color: #cecece;
+        top: 0;
+        right: 15px;
+      }
+    }
+  }
+
+}
+
+.sales {
+  width: 19.5%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 2px solid #faad3d;
+  background-color: #fff;
+
+  img {
+    object-fit: cover;
+    width: 70px;
+    height: 86px;
+    margin-bottom: 15px;
+  }
+
+  span {
+    font-size: 18px;
+  }
+
+  &__title {
+    color: #222222;
+    font-size: 40px;
+  }
+
+  &__link {
+    color: #ffaf2d;
+    margin-bottom: 28px;
+  }
+}
+
+.swiper-container {
+  height: 100%;
+
+  .swiper-pagination-bullet-active {
+    background: #fff;
+    width: 8px;
+    height: 8px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #f7f7f7;
+
+  }
+}
+
+.partners {
+  margin-bottom: 173px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 0px;
+  }
+
+  li {
+    display: flex;
+    height: 78px;
+    align-items: center;
+    border-right: 1px solid #f2f2f2;
+    width: 16.6%;
+    justify-content: center;
+  }
+}
+
+.news {
+  &__title {
+    margin-bottom: 44px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+    width: 490px;
+    height: 306px;
+    object-fit: cover;
+    margin-bottom: 25px;
+  }
+
+  &__content {
+    max-width: 490px;
+    width: 100%;
+
+    &-user {
+      color: #00aa4b;
+    }
+
+    &-date {
+      color: #777777;
+    }
+    &-title{
+      display: inline-block;
+      margin-bottom: 23px;
+    }
+    &-text{
+      margin-bottom: 52px;
+    }
+  }
+
+  &__content-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    max-width: 822px;
+    width: 100%;
+  }
+
+  &__content-link {
+    text-align: center;
+    color: #282828;
+    border: 2px solid #282828;
+    border-radius: 20px;
+    padding: 7px 30px;
+    cursor: pointer;
+  }
+}
+
+.producer-news {
+  display: flex;
+  margin-bottom: 45px;
+  &__title {
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+  &__top{
+        margin-bottom: 3px;
+  }
+  img{
+    margin-right: 20px;
+    object-fit: cover;
+    width: 191px;  
+    height: 168px;
+  }
+  &__text,
+  .news__content-text {
+    color: #191919;
+  }
+}
 
 @import 'media';
