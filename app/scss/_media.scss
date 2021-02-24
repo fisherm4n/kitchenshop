@@ -1,1 +1,56 @@
+@media (max-width:1450px) {
+  .header {
 
+    &__categories-link,
+    .menu__link,
+    .search__producers {
+      font-size: 12px;
+    }
+  }
+
+  .search {
+    &__form {
+      margin-left: 5px;
+      max-width: 724px;
+    }
+
+    &__basket {
+      margin-right: 0px;
+    }
+  }
+
+}
+
+@media (max-width:1200px) {
+  .menu__list {
+    padding: 0 10px;
+  }
+
+  .search__form {
+    max-width: 532px;
+  }
+}
+
+@media (max-width:1000px) {
+  .menu {
+      display: none;
+    &__btn {
+      display: inline-block;
+    }
+  }
+
+  .header {
+    &__top{
+      background-color: #fff;
+      .wrapper{
+        display: flex;
+      }
+    }
+    .logo {
+      display: flex;
+      &__title{
+        color: #353535;
+      }
+    }
+  }
+}
