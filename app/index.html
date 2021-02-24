@@ -13,24 +13,39 @@
     <div class="header__inner">
       <div class="header__top">
         <div class="wrapper">
-          <button class="menu__btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="18" viewBox="0 0 30 18" fill="none">
-              <path d="M0 0H30V2H0V0Z" fill="black"></path>
-              <path d="M0 8H30V10H0V8Z" fill="black"></path>
-              <rect y="16" width="30" height="2" fill="black"></rect>
-            </svg>
-          </button>
-          <a href="#" class="logo">
-            <img src="images/footer-logo.png" alt="Логотип">
-            <div class="logo__text">
-              <span class="logo__title">
-                Столовая.РУ
-              </span>
-              <p class="logo__subtitle">
-                Создание пищеблоков
-              </p>
+          <div class="header-mobile">
+            <div class="header-mobile__left">
+              <button class="menu__btn">
+                <svg width="30px" height="26px">
+                  <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                    d="M0.250,21.469 L29.438,21.469 L29.438,24.094 L0.250,24.094 L0.250,21.469 ZM0.250,10.844 L29.438,10.844 L29.438,13.500 L0.250,13.500 L0.250,10.844 ZM0.250,0.219 L29.438,0.219 L29.438,2.875 L0.250,2.875 L0.250,0.219 Z" />
+                </svg>
+              </button>
+              <a href="#" class="logo">
+                <img src="images/footer-logo.png" alt="Логотип">
+                <div class="logo__text">
+                  <span class="logo__title">
+                    Столовая.РУ
+                  </span>
+                  <p class="logo__subtitle">
+                    Создание пищеблоков
+                  </p>
+                </div>
+              </a>
             </div>
-          </a>
+            <div class="header-mobile__right">
+              <div class="header-mobile__item">
+                <img src="images/mobile-icons/search.svg" alt="Поиск">
+              </div>
+              <div class="header-mobile__item">
+                <img src="images/mobile-icons/phone.png" alt="Телефон">
+              </div>
+              <div class="header-mobile__item">
+                <span>12</span>
+                <img src="images/mobile-icons/basket.png" alt="Корзина">
+              </div>
+            </div>
+          </div>
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item">
@@ -132,6 +147,9 @@
       </div>
       <div class="header__categories">
         <div class="wrapper">
+          <div class="header__categories-title">
+            <span>Оборудование</span>
+          </div>
           <div class="header__categories-list">
             <div class="header__categories-item">
               <a class="header__categories-link" href="#">
@@ -226,13 +244,13 @@
       </div>
     </div>
   </header>
-  <!-- <main class="main">
+   <main class="main">
     <section class="offers">
       <div class="wrapper">
         <aside class="offers-filter">
-          <h2 class="offers-filter__title">
+          <div class="offers-filter__title">
             Целевые предложения
-          </h2>
+          </div>
           <ul class="offers-filter__list">
             <li>
               <a href="#">
@@ -356,6 +374,7 @@
       </div>
 
     </section>
+    <!--
     <div class="partners">
       <div class="wrapper">
         <ul class="partners__list">

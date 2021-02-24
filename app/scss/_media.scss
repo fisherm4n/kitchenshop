@@ -19,6 +19,46 @@
     }
   }
 
+  .offers-filter {
+
+    &__title,
+    &__list>li {
+      font-size: 20px;
+      padding-left: 7px;
+    }
+
+    &__list {
+      li>a {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .offers__slider {
+    margin: 0 10px;
+
+    
+    &-img {
+      margin-right: 40px;
+    }
+    &-text {
+      margin-left: 30px;
+    }
+    &-subtitle{
+      margin-bottom: 33px;
+    }
+  }
+
+  .sales {
+    padding: 12px;
+    span {
+      font-size: 14px;
+    }
+    &__title {
+      font-size: 28px;
+      margin-bottom: 3px;
+    }
+  }
 }
 
 @media (max-width:1200px) {
@@ -31,26 +71,115 @@
   }
 }
 
-@media (max-width:1000px) {
+@media (max-width:1050px) {
   .menu {
-      display: none;
+    display: none;
+
     &__btn {
-      display: inline-block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      margin-right: 10px;
     }
   }
 
   .header {
-    &__top{
+    &__top {
       background-color: #fff;
-      .wrapper{
-        display: flex;
+    }
+
+    &__categories-title {
+      display: block;
+
+      span::after {
+        content: '>';
+        float: right;
+        color: #8f8f8f;
       }
     }
-    .logo {
+
+    &__categories-list {
+      display: none;
+      flex-direction: column;
+
+      img {
+        display: none;
+      }
+    }
+  }
+
+  .header-mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    &__left {
       display: flex;
-      &__title{
-        color: #353535;
+    }
+
+    &__right {
+      display: flex;
+      align-items: center;
+
+    }
+
+    &__item {
+      &+& {
+        margin-left: 35px;
+      }
+
+      &:nth-child(3) {
+        span {
+          display: block;
+          font-size: 25px;
+          text-align: center;
+        }
       }
     }
+
+    .logo {
+      img {
+        width: 56px;
+        height: 56px;
+      }
+
+      &__title {
+        color: #353535;
+        font-size: 30px;
+      }
+
+      &__subtitle {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .search,
+  .offers-filter,
+  .sales {
+    display: none;
+  }
+  .offers{
+    padding: 0;
+    .wrapper{
+      padding: 0;
+    }
+    &__slider{
+      width: 100%;
+      margin: 0;
+      height: 558px;
+      &-img{
+        width: 277px;
+        height: 387px;
+      }
+    }
+  }
+}
+
+@media (min-width:1050px) {
+  .header__categories-list {
+    display: flex !important;
   }
 }
