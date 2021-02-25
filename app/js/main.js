@@ -1,3 +1,21 @@
+var swiper1 = new Swiper('.swiper-container-1', {
+
+  breakpoints: {
+  
+    767: {
+      slidesPerView: 5,
+    spaceBetween: 10,
+     
+    },
+    1024: {
+      slidesPerView: 6,
+      allowTouchMove: true,
+    },
+    1260: {
+      slidesPerView: 11,
+    }
+  }
+});
 var swiper = new Swiper('.swiper-container', {
   pagination: {
     el: '.swiper-pagination',
@@ -5,10 +23,9 @@ var swiper = new Swiper('.swiper-container', {
   },
 
 });
+
 $(function () {
-  // $('.menu__btn').on('click', function (){
-  //  $('.menu').slideToggle();
-  // });
+ 
   $('.header__categories-title').on('click', function (){
    $('.header__categories-list').slideToggle();
   });

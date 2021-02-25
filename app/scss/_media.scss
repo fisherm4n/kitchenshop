@@ -1,12 +1,10 @@
 @media (max-width:1450px) {
-  .header {
 
-    &__categories-link,
+    .header__categories-link,
     .menu__link,
     .search__producers {
       font-size: 12px;
     }
-  }
 
   .search {
     &__form {
@@ -70,8 +68,20 @@
     max-width: 532px;
   }
 }
-
-@media (max-width:1050px) {
+@media (max-width:1050px){
+  .menu{
+    &__link{
+      font-size: 9px;
+    }
+  }
+  .search__form {
+    max-width: 330px;
+  }
+  .sales__title {
+    font-size: 24px;
+  }
+}
+@media (max-width:767px) {
   .menu {
     display: none;
 
@@ -176,9 +186,37 @@
       }
     }
   }
+  .partners{
+    .wrapper{
+      padding: 0;
+    }
+    &__list{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 170px);
+      background-color: transparent;
+      grid-row-gap: 3px;
+      padding: 0;
+      li{
+        width: 100%;
+        background-color: #fff;
+        border:none;
+        position: relative;
+        height: 100%;
+        &:nth-child(2n)::after{
+          position: absolute;
+          left: 0;
+          content:'';
+          height: 120px;
+          width: 2px;
+          background-color: #efefef;
+        }
+      }
+    }
+  }
 }
 
-@media (min-width:1050px) {
+@media (min-width:767px) {
   .header__categories-list {
     display: flex !important;
   }
