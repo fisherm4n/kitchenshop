@@ -406,6 +406,7 @@
     align-items: center;
     padding: 20px 0px;
     background-color: #fff;
+
   }
 
   li {
@@ -485,7 +486,6 @@
 .producer-news {
   display: flex;
   margin-bottom: 45px;
-
   &__title {
     display: inline-block;
     margin-bottom: 20px;
@@ -513,7 +513,8 @@
   overflow: hidden;
   background-color: #fff;
 
-  &__title {
+  &__title,
+  &__title--mobile {
     font-size: 20px;
     text-transform: uppercase;
     @extend %MyriadPro-300;
@@ -525,7 +526,8 @@
     font-size: 30px;
   }
 
-  &__text {
+  &__text,
+  &__text--mobile {
     color: #777777;
   }
 
@@ -536,6 +538,11 @@
 
   &__img {
     object-fit: cover;
+  }
+  &__title--mobile,
+  &__text--mobile,
+  &__subtitle--mobile {
+    display: none;
   }
 }
 

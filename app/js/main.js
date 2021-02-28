@@ -29,5 +29,8 @@ $(function () {
   $('.header__categories-title').on('click', function (){
    $('.header__categories-list').slideToggle();
   });
+  $('.navigation__title').on('click', function (){
+    $(this).next().slideToggle();
+  });
 
 });
