@@ -15,6 +15,7 @@
   &__categories {
     box-shadow: 7px 7px 18px rgba(33, 37, 41, 0.12);
     padding: 8px 0 12px;
+    overflow: hidden;
   }
 
   &__categories-link {
