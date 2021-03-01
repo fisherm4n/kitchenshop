@@ -517,7 +517,12 @@
 .recommend-product {
   overflow: hidden;
   background-color: #fff;
-
+  &__title,
+  &__title--mobile,
+  &__subtitle,
+  &__subtitle--mobile{
+    display: block;
+  }
   &__title,
   &__title--mobile {
     font-size: 20px;
