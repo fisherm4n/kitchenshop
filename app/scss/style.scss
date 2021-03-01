@@ -111,6 +111,10 @@
 .swiper-container-1{
   width: 100%;
   height: 100%;
+  .swiper-slide{
+    width: fit-content !important;
+    height: 100%;
+  }
 }
 .search {
   background-color: #e7e6e6;
